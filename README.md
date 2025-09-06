@@ -1,8 +1,8 @@
 # EXPERIMENT-01-INTERFACTING-DIGITAL-OUTPUT-WITH-EDGE-DEVICE---(RASPBERRYPI-PICO)
-### NAME Varun A
-### DEPARTMENT AIML
-### ROLL NO 212224240178
-### DATE OF EXPERIMENT
+### NAME : LINGESWARAN K
+### DEPARTMENT : CSE(IOT)
+### ROLL NO :212222243001
+### DATE OF EXPERIMENT 
 
 ### AIM
 To interface a digital output device (LED) with the Raspberry Pi Pico and control it using MicroPython.
@@ -45,7 +45,7 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 ```
 from machine import Pin
 import time
-led = Pin(0, Pin.OUT)
+led = Pin(15, Pin.OUT)
 while True:
     led.on()
     print("LED is ON")
@@ -59,9 +59,9 @@ while True:
 ```
 from machine import Pin
 import time
-red_led = Pin(0, Pin.OUT)
-green_led = Pin(1, Pin.OUT)
-blue_led = Pin(2, Pin.OUT)
+red_led = Pin(15, Pin.OUT)
+green_led = Pin(14, Pin.OUT)
+blue_led = Pin(13, Pin.OUT)
 blink_delay = 0.5
 
 while True:
@@ -100,10 +100,10 @@ while True:
 from machine import Pin
 import time
 
-led1 = Pin(0, Pin.OUT)
-led2 = Pin(1, Pin.OUT)
-led3 = Pin(2, Pin.OUT)
-buzzer = Pin(3, Pin.OUT)
+led1 = Pin(15, Pin.OUT)
+led2 = Pin(14, Pin.OUT)
+led3 = Pin(13, Pin.OUT)
+buzzer = Pin(12, Pin.OUT)
 
 delay = 0.5 
 
@@ -140,20 +140,13 @@ while True:
 
 
 # FIGURE -02 LED WITH TIME DELAY:
-
-<img width="943" height="663" alt="image" src="https://github.com/user-attachments/assets/5f73f8b4-d23a-43aa-8ee2-ebd0548cdb08" />
-
-
+<img width="943" height="663" alt="Screenshot 2025-08-09 155310" src="https://github.com/user-attachments/assets/b7f2cbb1-618b-4c05-9d25-5cbb6a7ab311" />
 
 #  FIGURE -03 THREE LED IN SERIES WITH TIME DELAY:
-
-<img width="791" height="489" alt="image" src="https://github.com/user-attachments/assets/1d2d14f8-fefa-451e-82a5-93d3b756d5ee" />
-
-
+<img width="791" height="489" alt="image" src="https://github.com/user-attachments/assets/1d03073c-6bcb-4b42-8507-da972201668c" />
 
 # FIGURE -04 LED AND BUZZER IN SERIES WITH TIME DELAY:
-
-![WhatsApp Image 2025-08-09 at 16 19 18_9307b777](https://github.com/user-attachments/assets/5b56f836-408f-466e-bb05-1225edddb38b)
+![WhatsApp Image 2025-08-09 at 16 19 17_745eb133](https://github.com/user-attachments/assets/21cbc2c2-f965-43af-b334-7dc4a70697ef)
 
 
  
